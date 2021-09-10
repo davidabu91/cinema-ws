@@ -28,4 +28,4 @@ app.use('/api/auth', authControler)
 
 require('./config/database');
 
-app.listen(9000);
+app.listen(process.env.PORT || 9000);
