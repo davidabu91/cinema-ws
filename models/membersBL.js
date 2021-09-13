@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.getAllMembers = function() {
     return new Promise((resolve, reject) => {
-        axios('http://localhost:8000/api/members').then(resp => {
+        axios('https://subscriptions-web-server.herokuapp.com/api/members').then(resp => {
                 console.log(resp.status, resp.data);
                 resolve(resp.data)
             })
@@ -20,7 +20,7 @@ exports.getAllMembers = function() {
 
 exports.getMember = function(id) {
     return new Promise((resolve, reject) => {
-        axios('http://localhost:8000/api/members/' + id)
+        axios('https://subscriptions-web-server.herokuapp.com/api/members/' + id)
             .then(resp => resolve(resp.data))
             .catch(err => {
                 if (err.response) {
@@ -36,7 +36,7 @@ exports.getMember = function(id) {
 
 exports.addMember = function(obj) {
     return new Promise((resolve, reject) => {
-        axios.post('http://localhost:8000/api/members', obj)
+        axios.post('https://subscriptions-web-server.herokuapp.com/api/members', obj)
             .then(resp => {
                 resolve('Created')
             })
