@@ -56,7 +56,7 @@ exports.addMember = function(obj) {
 
 exports.updateMember = function(id, obj) {
     return new Promise((resolve, reject) => {
-        axios.put('http://localhost:8000/api/members/' + id, obj)
+        axios.put('https://subscriptions-web-server.herokuapp.com/api/members/' + id, obj)
             .then(resp => resolve('Updated'))
             .catch(err => {
                 if (err.response) {
@@ -74,7 +74,7 @@ exports.updateMember = function(id, obj) {
 
 exports.deleteMember = function(id) {
     return new Promise((resolve, reject) => {
-        axios.delete('http://localhost:8000/api/members/' + id)
+        axios.delete('https://subscriptions-web-server.herokuapp.com/api/members/' + id)
             .then(() => {
                 resolve('Deleted')
                     // console.log('Deleted');

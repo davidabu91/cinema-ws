@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.getAllSubscriptions = function() {
     return new Promise((resolve, reject) => {
-        axios('http://localhost:8000/api/subscriptions').then(resp => {
+        axios('https://subscriptions-web-server.herokuapp.com/api/subscriptions').then(resp => {
                 resolve(resp.data)
             })
             .catch(err => {
@@ -19,7 +19,7 @@ exports.getAllSubscriptions = function() {
 
 exports.getSubscription = function(id) {
     return new Promise((resolve, reject) => {
-        axios('http://localhost:8000/api/subscriptions/' + id)
+        axios('https://subscriptions-web-server.herokuapp.com/api/subscriptions/' + id)
             .then(resp => resolve(resp.data))
             .catch(err => {
                 if (err.response) {
@@ -35,7 +35,7 @@ exports.getSubscription = function(id) {
 
 exports.addSbscription = function(obj) {
     return new Promise((resolve, reject) => {
-        axios.post('http://localhost:8000/api/subscriptions', obj)
+        axios.post('https://subscriptions-web-server.herokuapp.com/api/subscriptions', obj)
             .then(() => {
                 resolve('Created')
             })
@@ -55,7 +55,7 @@ exports.addSbscription = function(obj) {
 
 exports.updateSubscriotion = function(id, obj) {
     return new Promise((resolve, reject) => {
-        axios.put('http://localhost:8000/api/subscriptions/' + id, obj)
+        axios.put('https://subscriptions-web-server.herokuapp.com/api/subscriptions/' + id, obj)
             .then(resp => resolve('Updated'))
             .catch(err => {
                 if (err.response) {
@@ -73,7 +73,7 @@ exports.updateSubscriotion = function(id, obj) {
 
 exports.deleteSubscription = function(id) {
     return new Promise((resolve, reject) => {
-        axios.delete('http://localhost:8000/api/subscriptions/' + id)
+        axios.delete('https://subscriptions-web-server.herokuapp.com/api/subscriptions/' + id)
             .then(() => {
                 resolve('Deleted')
             })

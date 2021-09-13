@@ -18,6 +18,7 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true })).use(bodyParser.json());
 
+
 app.use('/api/users', usersController)
 app.use('/api/permissions', permissionsController)
 app.use('/api/members', membersController)

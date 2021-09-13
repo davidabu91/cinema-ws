@@ -1,1 +1,8 @@
-{"users":[{"_id":"60a4c77312a2792dd4d3963b","FirstName":"Admin","LastName":"Admin","DateCreated":"03/04/2021","SessionTimeOut":60000,"index":"1"},{"_id":"60f7e86a67477c3950e82ed5","FirstName":"Noam","LastName":"Ben Ari","DateCreated":"2021-7-21","SessionTimeOut":32000,"index":"4"},{"_id":"60e49dc635f1842248d1d811","FirstName":"David","LastName":"Abou","DateCreated":"2021-7-6","SessionTimeOut":50000,"index":"2"},{"_id":"60f7df5167477c3950e82ed4","FirstName":"Alona","LastName":"Barkat","DateCreated":"2021-7-21","SessionTimeOut":500000000,"index":"3"}]}
+{
+    "users": [
+        { "_id": "60a4c77312a2792dd4d3963b", "FirstName": "Admin", "LastName": "Admin", "DateCreated": "03/04/2021", "SessionTimeOut": 60000, "index": "1" },
+        { "_id": "60f7e86a67477c3950e82ed5", "FirstName": "Noam", "LastName": "Ben Ari", "DateCreated": "2021-7-21", "SessionTimeOut": 32000, "index": "4" },
+        { "_id": "60e49dc635f1842248d1d811", "FirstName": "David", "LastName": "Abou", "DateCreated": "2021-7-6", "SessionTimeOut": 50000, "index": "2" },
+        { "_id": "60f7df5167477c3950e82ed4", "FirstName": "Alona", "LastName": "Barkat", "DateCreated": "2021-7-21", "SessionTimeOut": 500000000, "index": "3" }
+    ]
+}
