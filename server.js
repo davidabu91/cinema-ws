@@ -14,10 +14,7 @@ const authControler = require('./controllers/authController');
 
 const app = express();
 
-app.use(cors({
-    origin: `http://localhost:3000`, //react's address
-    credentials: true
-}));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true })).use(bodyParser.json());
 
 
