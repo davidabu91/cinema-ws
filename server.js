@@ -14,7 +14,11 @@ const authControler = require('./controllers/authController');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: `*`,
+    credentials: true
+}));
+
 app.use(bodyParser.urlencoded({ extended: true })).use(bodyParser.json());
 
 
